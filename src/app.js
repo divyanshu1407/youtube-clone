@@ -17,4 +17,12 @@ import userRouter from "./routes/user.route.js"
 
 app.use("/api/v1/users", userRouter )
 
+import videoRouter from "./routes/video.route.js"
+
+app.use("/api/v1/videos", videoRouter)
+
+import subscriptionRouter from "./routes/subscription.route.js"
+
+app.use("/api/v1/subscriptions", subscriptionRouter)
+
 export {app};
